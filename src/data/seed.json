@@ -1,0 +1,3921 @@
+{
+ "events": [
+  {
+   "id": "e_live",
+   "name": "Festival Sons da Cidade",
+   "type": "Festival/show",
+   "date": "2026-11-07",
+   "start": "12:00",
+   "end": "23:00",
+   "venue": "Arena Zona Norte",
+   "address": "Av. Exemplo, 1000 — São Paulo",
+   "public": 3000,
+   "tables": 4,
+   "stage": "confirmado",
+   "steps": {
+    "negociacao": {
+     "done": true,
+     "note": ""
+    },
+    "orcamento": {
+     "done": true,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": true,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": true,
+     "note": ""
+    },
+    "compras": {
+     "done": true,
+     "note": ""
+    },
+    "treinamento": {
+     "done": true,
+     "note": ""
+    },
+    "logistica": {
+     "done": true,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": true,
+     "note": ""
+    }
+   },
+   "team": [
+    {
+     "artistId": "a1",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a2",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a3",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a5",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a7",
+     "role": "atendimento",
+     "contract": "assinado",
+     "confirmed": true
+    }
+   ],
+   "need": {
+    "tatuador": 4,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Marcos Lima",
+    "company": "Produtora Sons",
+    "phone": "11987651111"
+   },
+   "budget": {
+    "fee": 1500,
+    "avgTicket": 210,
+    "conv": 6,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 180
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 300
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 5,
+     "status": "embalado"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 5,
+     "status": "embalado"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 3,
+     "status": "embalado"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 120,
+     "status": "embalado"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 180,
+     "status": "embalado"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 60,
+     "status": "embalado"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 60,
+     "status": "embalado"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 8,
+     "status": "embalado"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 60,
+     "status": "embalado"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 120,
+     "status": "embalado"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 12,
+     "status": "embalado"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 5,
+     "status": "embalado"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "embalado"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 16,
+     "status": "embalado"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "embalado"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 4,
+     "status": "embalado"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "embalado"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "embalado"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "embalado"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 60,
+     "status": "embalado"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "embalado"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "embalado"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "embalado"
+    }
+   ],
+   "training": {
+    "a1": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a2": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a3": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a5": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a7": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    }
+   },
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": "a1",
+     "ticketId": "t03",
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": "a2",
+     "ticketId": "t04",
+     "paused": false
+    },
+    {
+     "n": 3,
+     "artistId": "a3",
+     "ticketId": "t05",
+     "paused": false
+    },
+    {
+     "n": 4,
+     "artistId": "a5",
+     "ticketId": "t06",
+     "paused": false
+    }
+   ],
+   "cats": [
+    "Bandas",
+    "Música",
+    "Tema festa",
+    "Minimalistas",
+    "Signos",
+    "Frases",
+    "Palavras",
+    "Místico & cultural"
+   ],
+   "closing": {
+    "paid": {},
+    "feeReceived": false,
+    "extra": [],
+    "closedAt": null
+   },
+   "notes": "Stand ao lado da praça de alimentação. Montagem às 12h.",
+   "createdAt": 1790859600000
+  },
+  {
+   "id": "e_rosa",
+   "name": "Feira Rosa Solidária",
+   "type": "Feira",
+   "date": "2026-10-31",
+   "start": "10:00",
+   "end": "19:00",
+   "venue": "Centro Cultural Vila Nova",
+   "address": "Rua Exemplo, 250 — São Paulo",
+   "public": 1200,
+   "tables": 3,
+   "stage": "fechado",
+   "steps": {
+    "negociacao": {
+     "done": true,
+     "note": ""
+    },
+    "orcamento": {
+     "done": true,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": true,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": true,
+     "note": ""
+    },
+    "compras": {
+     "done": true,
+     "note": ""
+    },
+    "treinamento": {
+     "done": true,
+     "note": ""
+    },
+    "logistica": {
+     "done": true,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": true,
+     "note": ""
+    }
+   },
+   "team": [
+    {
+     "artistId": "a1",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a3",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a4",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a9",
+     "role": "atendimento",
+     "contract": "assinado",
+     "confirmed": true
+    }
+   ],
+   "need": {
+    "tatuador": 3,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Renata Alves",
+    "company": "Instituto Rosa",
+    "phone": "11987652222"
+   },
+   "budget": {
+    "fee": 800,
+    "avgTicket": 210,
+    "conv": 6,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 180
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 240
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 4,
+     "status": "voltou"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 4,
+     "status": "voltou"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 2,
+     "status": "voltou"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 80,
+     "status": "voltou"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 120,
+     "status": "voltou"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 40,
+     "status": "voltou"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 40,
+     "status": "voltou"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 6,
+     "status": "voltou"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 40,
+     "status": "voltou"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 80,
+     "status": "voltou"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 9,
+     "status": "voltou"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 4,
+     "status": "voltou"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "voltou"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 12,
+     "status": "voltou"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "voltou"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 3,
+     "status": "voltou"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "voltou"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "voltou"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "voltou"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 40,
+     "status": "voltou"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "voltou"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "voltou"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "voltou"
+    }
+   ],
+   "training": {
+    "a1": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a3": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a4": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a9": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    }
+   },
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 3,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    }
+   ],
+   "cats": [
+    "Outubro Rosa",
+    "Borboletas",
+    "Frases",
+    "Palavras",
+    "Minimalistas"
+   ],
+   "closing": {
+    "paid": {
+     "a1": true,
+     "a3": true,
+     "a4": true
+    },
+    "feeReceived": true,
+    "extra": [
+     {
+      "name": "Doação ao instituto",
+      "value": 300
+     }
+    ],
+    "closedAt": 1793628000000
+   },
+   "notes": "Parte da venda revertida ao instituto.",
+   "createdAt": 1790859600000
+  },
+  {
+   "id": "e_casa",
+   "name": "Casamento Júlia & Pedro",
+   "type": "Casamento",
+   "date": "2026-11-14",
+   "start": "19:00",
+   "end": "02:00",
+   "venue": "Espaço Villa Jardim",
+   "address": "Estrada Exemplo, km 3 — Cotia",
+   "public": 180,
+   "tables": 2,
+   "stage": "contrato",
+   "steps": {
+    "negociacao": {
+     "done": true,
+     "note": ""
+    },
+    "orcamento": {
+     "done": true,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": false,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": false,
+     "note": ""
+    },
+    "compras": {
+     "done": false,
+     "note": ""
+    },
+    "treinamento": {
+     "done": false,
+     "note": ""
+    },
+    "logistica": {
+     "done": false,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": false,
+     "note": ""
+    }
+   },
+   "team": [
+    {
+     "artistId": "a3",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a5",
+     "role": "tatuador",
+     "contract": "enviado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a9",
+     "role": "atendimento",
+     "contract": "pendente",
+     "confirmed": false
+    }
+   ],
+   "need": {
+    "tatuador": 2,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Júlia Martins",
+    "company": "",
+    "phone": "11987653333"
+   },
+   "budget": {
+    "fee": 2800,
+    "avgTicket": 0,
+    "conv": 0,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 220
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 0
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 3,
+     "status": "separado"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 2,
+     "status": "separado"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 2,
+     "status": "separado"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 2,
+     "status": "separado"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 2,
+     "status": "separado"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 3,
+     "status": "separado"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 36,
+     "status": "faltando"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 54,
+     "status": "faltando"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 18,
+     "status": "faltando"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 18,
+     "status": "faltando"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 4,
+     "status": "faltando"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 18,
+     "status": "faltando"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 36,
+     "status": "faltando"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 6,
+     "status": "faltando"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 8,
+     "status": "faltando"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "faltando"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 18,
+     "status": "faltando"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "faltando"
+    }
+   ],
+   "training": {
+    "a3": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a5": {
+     "bio": true,
+     "cruzada": true
+    }
+   },
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    }
+   ],
+   "cats": [
+    "Dupla",
+    "Frases",
+    "Palavras",
+    "Infinito",
+    "Minimalistas",
+    "Tema festa",
+    "Borboletas",
+    "Signos"
+   ],
+   "closing": {
+    "paid": {},
+    "feeReceived": false,
+    "extra": [],
+    "closedAt": null
+   },
+   "notes": "Noivos pagam pacote fechado de até 20 tattoos.",
+   "createdAt": 1790859600000
+  },
+  {
+   "id": "e_form",
+   "name": "Formatura Medicina — Turma 2026",
+   "type": "Formatura",
+   "date": "2026-11-21",
+   "start": "23:00",
+   "end": "05:00",
+   "venue": "Salão Imperial",
+   "address": "Av. Exemplo, 500 — São Paulo",
+   "public": 600,
+   "tables": 3,
+   "stage": "confirmado",
+   "steps": {
+    "negociacao": {
+     "done": true,
+     "note": ""
+    },
+    "orcamento": {
+     "done": true,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": true,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": true,
+     "note": ""
+    },
+    "compras": {
+     "done": true,
+     "note": ""
+    },
+    "treinamento": {
+     "done": false,
+     "note": ""
+    },
+    "logistica": {
+     "done": false,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": false,
+     "note": ""
+    }
+   },
+   "team": [
+    {
+     "artistId": "a1",
+     "role": "tatuador",
+     "contract": "assinado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a2",
+     "role": "tatuador",
+     "contract": "enviado",
+     "confirmed": true
+    },
+    {
+     "artistId": "a7",
+     "role": "atendimento",
+     "contract": "assinado",
+     "confirmed": true
+    }
+   ],
+   "need": {
+    "tatuador": 3,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Comissão de formatura",
+    "company": "Medicina 2026",
+    "phone": "11987654444"
+   },
+   "budget": {
+    "fee": 1800,
+    "avgTicket": 210,
+    "conv": 6,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 180
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 180
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 4,
+     "status": "faltando"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 4,
+     "status": "faltando"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 2,
+     "status": "comprar"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 3,
+     "status": "comprar"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 72,
+     "status": "comprar"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 108,
+     "status": "comprar"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 36,
+     "status": "comprar"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 36,
+     "status": "comprar"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 3,
+     "status": "comprar"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 6,
+     "status": "comprar"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 3,
+     "status": "comprar"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 3,
+     "status": "comprar"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 36,
+     "status": "comprar"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 72,
+     "status": "faltando"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 9,
+     "status": "faltando"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 4,
+     "status": "faltando"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 12,
+     "status": "faltando"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "faltando"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 36,
+     "status": "faltando"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "faltando"
+    }
+   ],
+   "training": {
+    "a1": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    },
+    "a7": {
+     "bio": true,
+     "cruzada": true,
+     "perfuro": true,
+     "socorros": true,
+     "vigilancia": true,
+     "app": true
+    }
+   },
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 3,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    }
+   ],
+   "cats": [
+    "Profissões",
+    "Frases",
+    "Palavras",
+    "Números",
+    "Dupla",
+    "Signos",
+    "Minimalistas"
+   ],
+   "closing": {
+    "paid": {},
+    "feeReceived": false,
+    "extra": [],
+    "closedAt": null
+   },
+   "notes": "",
+   "createdAt": 1790859600000
+  },
+  {
+   "id": "e_corp",
+   "name": "Confraternização Nuvem Tech",
+   "type": "Festa corporativa",
+   "date": "2026-12-04",
+   "start": "19:00",
+   "end": "23:00",
+   "venue": "Rooftop Paulista",
+   "address": "Av. Exemplo, 2000 — São Paulo",
+   "public": 250,
+   "tables": 2,
+   "stage": "orcamento",
+   "steps": {
+    "negociacao": {
+     "done": true,
+     "note": ""
+    },
+    "orcamento": {
+     "done": false,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": false,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": false,
+     "note": ""
+    },
+    "compras": {
+     "done": false,
+     "note": ""
+    },
+    "treinamento": {
+     "done": false,
+     "note": ""
+    },
+    "logistica": {
+     "done": false,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": false,
+     "note": ""
+    }
+   },
+   "team": [],
+   "need": {
+    "tatuador": 2,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Carla (RH)",
+    "company": "Nuvem Tech",
+    "phone": "11987655555"
+   },
+   "budget": {
+    "fee": 3200,
+    "avgTicket": 210,
+    "conv": 6,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 180
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 0
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 48,
+     "status": "faltando"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 72,
+     "status": "faltando"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 24,
+     "status": "faltando"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 24,
+     "status": "faltando"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 4,
+     "status": "faltando"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 24,
+     "status": "faltando"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 48,
+     "status": "faltando"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 6,
+     "status": "faltando"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 3,
+     "status": "faltando"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 8,
+     "status": "faltando"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "faltando"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 24,
+     "status": "faltando"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "faltando"
+    }
+   ],
+   "training": {},
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    }
+   ],
+   "cats": [
+    "Profissões",
+    "Minimalistas",
+    "Frases",
+    "Palavras",
+    "Signos",
+    "Pet"
+   ],
+   "closing": {
+    "paid": {},
+    "feeReceived": false,
+    "extra": [],
+    "closedAt": null
+   },
+   "notes": "",
+   "createdAt": 1790859600000
+  },
+  {
+   "id": "e_feira",
+   "name": "Feira Criativa de Verão",
+   "type": "Feira",
+   "date": "2026-12-12",
+   "start": "11:00",
+   "end": "20:00",
+   "venue": "Pavilhão das Artes",
+   "address": "Rua Exemplo, 80 — São Paulo",
+   "public": 5000,
+   "tables": 5,
+   "stage": "negociacao",
+   "steps": {
+    "negociacao": {
+     "done": false,
+     "note": ""
+    },
+    "orcamento": {
+     "done": false,
+     "note": ""
+    },
+    "contrato_parceiro": {
+     "done": false,
+     "note": ""
+    },
+    "contratos_tatuadores": {
+     "done": false,
+     "note": ""
+    },
+    "compras": {
+     "done": false,
+     "note": ""
+    },
+    "treinamento": {
+     "done": false,
+     "note": ""
+    },
+    "logistica": {
+     "done": false,
+     "note": ""
+    },
+    "divulgacao": {
+     "done": false,
+     "note": ""
+    }
+   },
+   "team": [],
+   "need": {
+    "tatuador": 5,
+    "atendimento": 1
+   },
+   "partner": {
+    "name": "Diego Souza",
+    "company": "Feira Criativa",
+    "phone": "11987656666"
+   },
+   "budget": {
+    "fee": 0,
+    "avgTicket": 210,
+    "conv": 6,
+    "costs": [
+     {
+      "id": "k1",
+      "name": "Transporte",
+      "value": 180
+     },
+     {
+      "id": "k2",
+      "name": "Alimentação da equipe",
+      "value": 0
+     },
+     {
+      "id": "k3",
+      "name": "Diária do atendimento",
+      "value": 150
+     }
+    ]
+   },
+   "checklist": [
+    {
+     "id": "c0",
+     "group": "Equipamentos",
+     "name": "Máquina rotativa + cabo",
+     "qty": 6,
+     "status": "faltando"
+    },
+    {
+     "id": "c1",
+     "group": "Equipamentos",
+     "name": "Fonte ou bateria extra",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c2",
+     "group": "Equipamentos",
+     "name": "Maca ou cadeira",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c3",
+     "group": "Equipamentos",
+     "name": "Mesa auxiliar",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c4",
+     "group": "Equipamentos",
+     "name": "Luminária",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c5",
+     "group": "Equipamentos",
+     "name": "Extensão e régua de tomadas",
+     "qty": 6,
+     "status": "faltando"
+    },
+    {
+     "id": "c6",
+     "group": "Insumos",
+     "name": "Cartuchos (caixas de 20)",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c7",
+     "group": "Insumos",
+     "name": "Tinta preta (frasco)",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c8",
+     "group": "Insumos",
+     "name": "Batoques",
+     "qty": 180,
+     "status": "faltando"
+    },
+    {
+     "id": "c9",
+     "group": "Insumos",
+     "name": "Luvas nitrílicas (pares)",
+     "qty": 270,
+     "status": "faltando"
+    },
+    {
+     "id": "c10",
+     "group": "Insumos",
+     "name": "Papel stencil",
+     "qty": 90,
+     "status": "faltando"
+    },
+    {
+     "id": "c11",
+     "group": "Insumos",
+     "name": "Lâminas descartáveis",
+     "qty": 90,
+     "status": "faltando"
+    },
+    {
+     "id": "c12",
+     "group": "Insumos",
+     "name": "Filme PVC (rolo)",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c13",
+     "group": "Insumos",
+     "name": "Papel toalha (rolo)",
+     "qty": 10,
+     "status": "faltando"
+    },
+    {
+     "id": "c14",
+     "group": "Insumos",
+     "name": "Vaselina ou manteiga (pote)",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c15",
+     "group": "Insumos",
+     "name": "Sabão neutro / espuma (frasco)",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c16",
+     "group": "Insumos",
+     "name": "Película protetora",
+     "qty": 90,
+     "status": "faltando"
+    },
+    {
+     "id": "c17",
+     "group": "Biossegurança",
+     "name": "Barreiras plásticas p/ máquina e cabo",
+     "qty": 180,
+     "status": "faltando"
+    },
+    {
+     "id": "c18",
+     "group": "Biossegurança",
+     "name": "Coletor de perfurocortante",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c19",
+     "group": "Biossegurança",
+     "name": "Saco de lixo infectante (branco)",
+     "qty": 15,
+     "status": "faltando"
+    },
+    {
+     "id": "c20",
+     "group": "Biossegurança",
+     "name": "Álcool 70% (frasco)",
+     "qty": 6,
+     "status": "faltando"
+    },
+    {
+     "id": "c21",
+     "group": "Biossegurança",
+     "name": "Kit de primeiros socorros",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c22",
+     "group": "Biossegurança",
+     "name": "Máscaras e aventais",
+     "qty": 20,
+     "status": "faltando"
+    },
+    {
+     "id": "c23",
+     "group": "Stand",
+     "name": "Banner com QR code do catálogo",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c24",
+     "group": "Stand",
+     "name": "Display de QR para as mesas",
+     "qty": 5,
+     "status": "faltando"
+    },
+    {
+     "id": "c25",
+     "group": "Stand",
+     "name": "Maquininha de cartão",
+     "qty": 2,
+     "status": "faltando"
+    },
+    {
+     "id": "c26",
+     "group": "Stand",
+     "name": "Celular/tablet do atendimento",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c27",
+     "group": "Stand",
+     "name": "Fichas de anamnese impressas (reserva)",
+     "qty": 20,
+     "status": "faltando"
+    },
+    {
+     "id": "c28",
+     "group": "Pós-atendimento",
+     "name": "Kit pós (pomada + cartão de cuidados)",
+     "qty": 90,
+     "status": "faltando"
+    },
+    {
+     "id": "c29",
+     "group": "Documentos",
+     "name": "Contrato do parceiro (cópia)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c30",
+     "group": "Documentos",
+     "name": "Contratos dos tatuadores (cópias)",
+     "qty": 1,
+     "status": "faltando"
+    },
+    {
+     "id": "c31",
+     "group": "Documentos",
+     "name": "Licença sanitária / documentos exigidos",
+     "qty": 1,
+     "status": "faltando"
+    }
+   ],
+   "training": {},
+   "tableState": [
+    {
+     "n": 1,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 2,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 3,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 4,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    },
+    {
+     "n": 5,
+     "artistId": null,
+     "ticketId": null,
+     "paused": false
+    }
+   ],
+   "cats": [],
+   "closing": {
+    "paid": {},
+    "feeReceived": false,
+    "extra": [],
+    "closedAt": null
+   },
+   "notes": "Pedem 15% sobre as vendas no lugar de taxa fixa.",
+   "createdAt": 1790859600000
+  }
+ ],
+ "artists": [
+  {
+   "id": "a1",
+   "name": "Bruna Tavares",
+   "phone": "11987650001",
+   "role": "tatuador",
+   "level": "Sênior",
+   "years": 9,
+   "langs": [
+    "Português",
+    "Inglês"
+   ],
+   "styles": [
+    "Fineline",
+    "Blackwork"
+   ],
+   "days": [
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 50,
+   "instagram": "@bruna.tattoo",
+   "notes": "Rápida em fineline; lidera a mesa 1."
+  },
+  {
+   "id": "a2",
+   "name": "Caio Mendes",
+   "phone": "11987650002",
+   "role": "tatuador",
+   "level": "Intermediário",
+   "years": 4,
+   "langs": [
+    "Português",
+    "Espanhol"
+   ],
+   "styles": [
+    "Blackwork",
+    "Neotrad"
+   ],
+   "days": [
+    "sex",
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 50,
+   "instagram": "@caio.ink",
+   "notes": ""
+  },
+  {
+   "id": "a3",
+   "name": "Larissa Okada",
+   "phone": "11987650003",
+   "role": "tatuador",
+   "level": "Sênior",
+   "years": 7,
+   "langs": [
+    "Português",
+    "Inglês",
+    "Japonês"
+   ],
+   "styles": [
+    "Fineline",
+    "Realismo"
+   ],
+   "days": [
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 55,
+   "instagram": "@lari.okada",
+   "notes": "Ótima com lettering e frases."
+  },
+  {
+   "id": "a4",
+   "name": "Rafael Duarte",
+   "phone": "11987650004",
+   "role": "tatuador",
+   "level": "Intermediário",
+   "years": 3,
+   "langs": [
+    "Português"
+   ],
+   "styles": [
+    "Fineline",
+    "Cobertura"
+   ],
+   "days": [
+    "sab"
+   ],
+   "blocked": [
+    "2026-11-28"
+   ],
+   "commission": 50,
+   "instagram": "@rafa.duarte",
+   "notes": ""
+  },
+  {
+   "id": "a5",
+   "name": "Mel Andrade",
+   "phone": "11987650005",
+   "role": "tatuador",
+   "level": "Iniciante",
+   "years": 1,
+   "langs": [
+    "Português",
+    "Libras"
+   ],
+   "styles": [
+    "Fineline"
+   ],
+   "days": [
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 45,
+   "instagram": "@mel.tattoo",
+   "notes": "Em formação; sempre com alguém sênior no evento."
+  },
+  {
+   "id": "a6",
+   "name": "Thiago Rocha",
+   "phone": "11987650006",
+   "role": "tatuador",
+   "level": "Sênior",
+   "years": 12,
+   "langs": [
+    "Português",
+    "Inglês",
+    "Espanhol"
+   ],
+   "styles": [
+    "Realismo",
+    "Neotrad",
+    "Reformas"
+   ],
+   "days": [
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 55,
+   "instagram": "@thiago.rocha.tattoo",
+   "notes": "Bom para eventos com público estrangeiro."
+  },
+  {
+   "id": "a7",
+   "name": "Júlia Prado",
+   "phone": "11987650007",
+   "role": "atendimento",
+   "level": "Intermediário",
+   "years": 2,
+   "langs": [
+    "Português",
+    "Inglês"
+   ],
+   "styles": [],
+   "days": [
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 0,
+   "instagram": "",
+   "notes": "Diária fixa."
+  },
+  {
+   "id": "a8",
+   "name": "Nina Costa",
+   "phone": "11987650008",
+   "role": "piercer",
+   "level": "Intermediário",
+   "years": 5,
+   "langs": [
+    "Português"
+   ],
+   "styles": [],
+   "days": [
+    "sab",
+    "dom"
+   ],
+   "blocked": [],
+   "commission": 50,
+   "instagram": "@nina.piercing",
+   "notes": ""
+  },
+  {
+   "id": "a9",
+   "name": "Paula Reis",
+   "phone": "11987650009",
+   "role": "atendimento",
+   "level": "Iniciante",
+   "years": 1,
+   "langs": [
+    "Português",
+    "Libras"
+   ],
+   "styles": [],
+   "days": [
+    "sex",
+    "sab"
+   ],
+   "blocked": [],
+   "commission": 0,
+   "instagram": "",
+   "notes": "Diária fixa."
+  }
+ ],
+ "tickets": [
+  {
+   "id": "t01",
+   "eventId": "e_live",
+   "code": "MFP",
+   "createdAt": 1794071100000,
+   "status": "concluido",
+   "name": "Ana Beatriz Souza",
+   "phone": "11998000000",
+   "flash": {
+    "sheet": 4,
+    "n": 2,
+    "size": "M",
+    "tier": "D",
+    "price": 280
+   },
+   "bodyPart": "Antebraço",
+   "anamnese": {
+    "nascimento": "1990-01-10",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 280,
+    "at": 1794071460000
+   },
+   "queueAt": 1794071460000,
+   "table": 1,
+   "artistId": "a1",
+   "calledAt": 1794072300000,
+   "startedAt": 1794072540000,
+   "doneAt": 1794073980000,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t02",
+   "eventId": "e_live",
+   "code": "YCD",
+   "createdAt": 1794071640000,
+   "status": "concluido",
+   "name": "Lucas Ferreira",
+   "phone": "11998000137",
+   "flash": {
+    "sheet": 15,
+    "n": 6,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Pulso",
+   "anamnese": {
+    "nascimento": "1991-02-11",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "cartao",
+    "amount": 150,
+    "at": 1794072000000
+   },
+   "queueAt": 1794072000000,
+   "table": 2,
+   "artistId": "a2",
+   "calledAt": 1794072840000,
+   "startedAt": 1794073080000,
+   "doneAt": 1794074520000,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t03",
+   "eventId": "e_live",
+   "code": "VEN",
+   "createdAt": 1794072180000,
+   "status": "em_atendimento",
+   "name": "Mariana Costa",
+   "phone": "11998000274",
+   "flash": {
+    "sheet": 2,
+    "n": 1,
+    "size": "M",
+    "tier": "D",
+    "price": 280
+   },
+   "bodyPart": "Tornozelo",
+   "anamnese": {
+    "nascimento": "1992-03-12",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 280,
+    "at": 1794072540000
+   },
+   "queueAt": 1794072540000,
+   "table": 1,
+   "artistId": "a1",
+   "calledAt": 1794073380000,
+   "startedAt": 1794073620000,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t04",
+   "eventId": "e_live",
+   "code": "WCU",
+   "createdAt": 1794072720000,
+   "status": "chamado",
+   "name": "Pedro Henrique Lima",
+   "phone": "11998000411",
+   "flash": {
+    "sheet": 53,
+    "n": 7,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Costela",
+   "anamnese": {
+    "nascimento": "1993-04-13",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "dinheiro",
+    "amount": 150,
+    "at": 1794073080000
+   },
+   "queueAt": 1794073080000,
+   "table": 2,
+   "artistId": "a2",
+   "calledAt": 1794073920000,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t05",
+   "eventId": "e_live",
+   "code": "HCD",
+   "createdAt": 1794073260000,
+   "status": "em_atendimento",
+   "name": "Camila Rocha",
+   "phone": "11998000548",
+   "flash": {
+    "sheet": 25,
+    "n": 3,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Nuca",
+   "anamnese": {
+    "nascimento": "1994-05-14",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": true,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "Alergia a látex",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [
+    "Alergia (látex, pigmentos, cosméticos, medicamentos)"
+   ],
+   "pay": {
+    "method": "cartao",
+    "amount": 150,
+    "at": 1794073620000
+   },
+   "queueAt": 1794073620000,
+   "table": 3,
+   "artistId": "a3",
+   "calledAt": 1794074460000,
+   "startedAt": 1794074700000,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t06",
+   "eventId": "e_live",
+   "code": "QQD",
+   "createdAt": 1794073800000,
+   "status": "em_atendimento",
+   "name": "Gabriel Martins",
+   "phone": "11998000685",
+   "flash": {
+    "sheet": 47,
+    "n": 1,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Braço",
+   "anamnese": {
+    "nascimento": "1995-06-15",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 150,
+    "at": 1794074160000
+   },
+   "queueAt": 1794074160000,
+   "table": 4,
+   "artistId": "a5",
+   "calledAt": 1794075000000,
+   "startedAt": 1794075240000,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t07",
+   "eventId": "e_live",
+   "code": "JDV",
+   "createdAt": 1794074340000,
+   "status": "na_fila",
+   "name": "Isabela Nunes",
+   "phone": "11998000822",
+   "flash": {
+    "sheet": 57,
+    "n": 6,
+    "size": "M",
+    "tier": "D",
+    "price": 280
+   },
+   "bodyPart": "Antebraço",
+   "anamnese": {
+    "nascimento": "1996-07-16",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 280,
+    "at": 1794074700000
+   },
+   "queueAt": 1794074700000,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t08",
+   "eventId": "e_live",
+   "code": "QCW",
+   "createdAt": 1794074880000,
+   "status": "na_fila",
+   "name": "Rafael Gomes",
+   "phone": "11998000959",
+   "flash": {
+    "sheet": 15,
+    "n": 11,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Pulso",
+   "anamnese": {
+    "nascimento": "1997-08-17",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": true,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "Uma cerveja há 2 h",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [
+    "Ingeriu bebida alcoólica nas últimas 24 h"
+   ],
+   "pay": {
+    "method": "cartao",
+    "amount": 150,
+    "at": 1794075240000
+   },
+   "queueAt": 1794075240000,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t09",
+   "eventId": "e_live",
+   "code": "EJY",
+   "createdAt": 1794075420000,
+   "status": "na_fila",
+   "name": "Letícia Barros",
+   "phone": "11998001096",
+   "flash": {
+    "sheet": 54,
+    "n": 3,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Tornozelo",
+   "anamnese": {
+    "nascimento": "1998-09-18",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 150,
+    "at": 1794075780000
+   },
+   "queueAt": 1794075780000,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t10",
+   "eventId": "e_live",
+   "code": "YWC",
+   "createdAt": 1794075960000,
+   "status": "na_fila",
+   "name": "Thiago Almeida",
+   "phone": "11998001233",
+   "flash": {
+    "sheet": 31,
+    "n": 4,
+    "size": "M",
+    "tier": "F",
+    "price": 200
+   },
+   "bodyPart": "Costela",
+   "anamnese": {
+    "nascimento": "1999-01-10",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "cartao",
+    "amount": 200,
+    "at": 1794076320000
+   },
+   "queueAt": 1794076320000,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t11",
+   "eventId": "e_live",
+   "code": "WWP",
+   "createdAt": 1794076500000,
+   "status": "aguardando_pagamento",
+   "name": "Beatriz Carvalho",
+   "phone": "11998001370",
+   "flash": {
+    "sheet": 3,
+    "n": 16,
+    "size": "G",
+    "tier": "D",
+    "price": 360
+   },
+   "bodyPart": "Nuca",
+   "anamnese": {
+    "nascimento": "2000-02-11",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": null,
+   "queueAt": null,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "t12",
+   "eventId": "e_live",
+   "code": "CJC",
+   "createdAt": 1794077040000,
+   "status": "aguardando_pagamento",
+   "name": "Felipe Ramos",
+   "phone": "11998001507",
+   "flash": {
+    "sheet": 49,
+    "n": 2,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Braço",
+   "anamnese": {
+    "nascimento": "2001-03-12",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": null,
+   "queueAt": null,
+   "table": null,
+   "artistId": null,
+   "calledAt": null,
+   "startedAt": null,
+   "doneAt": null,
+   "care": {},
+   "source": "qr"
+  },
+  {
+   "id": "r01",
+   "eventId": "e_rosa",
+   "code": "VFL",
+   "createdAt": 1793455200000,
+   "status": "concluido",
+   "name": "Sofia Pereira",
+   "phone": "11987000000",
+   "flash": {
+    "sheet": 1,
+    "n": 3,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Tornozelo",
+   "anamnese": {
+    "nascimento": "1993-04-13",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 150,
+    "at": 1793455500000
+   },
+   "queueAt": 1793455500000,
+   "table": 1,
+   "artistId": "a1",
+   "calledAt": 1793456100000,
+   "startedAt": 1793456280000,
+   "doneAt": 1793457900000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r02",
+   "eventId": "e_rosa",
+   "code": "QFV",
+   "createdAt": 1793457600000,
+   "status": "concluido",
+   "name": "Vitor Hugo Dias",
+   "phone": "11987000311",
+   "flash": {
+    "sheet": 55,
+    "n": 1,
+    "size": "M",
+    "tier": "D",
+    "price": 280
+   },
+   "bodyPart": "Costela",
+   "anamnese": {
+    "nascimento": "1994-05-14",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "cartao",
+    "amount": 280,
+    "at": 1793457900000
+   },
+   "queueAt": 1793457900000,
+   "table": 2,
+   "artistId": "a3",
+   "calledAt": 1793458500000,
+   "startedAt": 1793458680000,
+   "doneAt": 1793460300000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r03",
+   "eventId": "e_rosa",
+   "code": "EWL",
+   "createdAt": 1793460000000,
+   "status": "concluido",
+   "name": "Larissa Monteiro",
+   "phone": "11987000622",
+   "flash": {
+    "sheet": 31,
+    "n": 8,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Nuca",
+   "anamnese": {
+    "nascimento": "1995-06-15",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 150,
+    "at": 1793460300000
+   },
+   "queueAt": 1793460300000,
+   "table": 3,
+   "artistId": "a4",
+   "calledAt": 1793460900000,
+   "startedAt": 1793461080000,
+   "doneAt": 1793462700000,
+   "care": {
+    "1": 1793538000000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r04",
+   "eventId": "e_rosa",
+   "code": "V3G",
+   "createdAt": 1793462400000,
+   "status": "concluido",
+   "name": "Gustavo Ribeiro",
+   "phone": "11987000933",
+   "flash": {
+    "sheet": 1,
+    "n": 14,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Braço",
+   "anamnese": {
+    "nascimento": "1996-07-16",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "dinheiro",
+    "amount": 150,
+    "at": 1793462700000
+   },
+   "queueAt": 1793462700000,
+   "table": 1,
+   "artistId": "a1",
+   "calledAt": 1793463300000,
+   "startedAt": 1793463480000,
+   "doneAt": 1793465100000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r05",
+   "eventId": "e_rosa",
+   "code": "EWW",
+   "createdAt": 1793464800000,
+   "status": "concluido",
+   "name": "Clara Mendes",
+   "phone": "11987001244",
+   "flash": {
+    "sheet": 55,
+    "n": 13,
+    "size": "M",
+    "tier": "D",
+    "price": 280
+   },
+   "bodyPart": "Antebraço",
+   "anamnese": {
+    "nascimento": "1997-08-17",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "cartao",
+    "amount": 280,
+    "at": 1793465100000
+   },
+   "queueAt": 1793465100000,
+   "table": 2,
+   "artistId": "a3",
+   "calledAt": 1793465700000,
+   "startedAt": 1793465880000,
+   "doneAt": 1793467500000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r06",
+   "eventId": "e_rosa",
+   "code": "YHN",
+   "createdAt": 1793467200000,
+   "status": "concluido",
+   "name": "Daniel Teixeira",
+   "phone": "11987001555",
+   "flash": {
+    "sheet": 47,
+    "n": 9,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Pulso",
+   "anamnese": {
+    "nascimento": "1998-09-18",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 150,
+    "at": 1793467500000
+   },
+   "queueAt": 1793467500000,
+   "table": 3,
+   "artistId": "a4",
+   "calledAt": 1793468100000,
+   "startedAt": 1793468280000,
+   "doneAt": 1793469900000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r07",
+   "eventId": "e_rosa",
+   "code": "EV4",
+   "createdAt": 1793469600000,
+   "status": "concluido",
+   "name": "Yasmin Lopes",
+   "phone": "11987001866",
+   "flash": {
+    "sheet": 31,
+    "n": 2,
+    "size": "M",
+    "tier": "F",
+    "price": 200
+   },
+   "bodyPart": "Tornozelo",
+   "anamnese": {
+    "nascimento": "1999-01-10",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": true,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": false,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "pix",
+    "amount": 200,
+    "at": 1793469900000
+   },
+   "queueAt": 1793469900000,
+   "table": 1,
+   "artistId": "a1",
+   "calledAt": 1793470500000,
+   "startedAt": 1793470680000,
+   "doneAt": 1793472300000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  },
+  {
+   "id": "r08",
+   "eventId": "e_rosa",
+   "code": "DWC",
+   "createdAt": 1793472000000,
+   "status": "concluido",
+   "name": "Bruno Castro",
+   "phone": "11987002177",
+   "flash": {
+    "sheet": 49,
+    "n": 4,
+    "size": "P",
+    "tier": "F",
+    "price": 150
+   },
+   "bodyPart": "Costela",
+   "anamnese": {
+    "nascimento": "2000-02-11",
+    "cpf": "",
+    "email": "",
+    "instagram": "",
+    "cidade": "São Paulo",
+    "primeira": false,
+    "comoConheceu": "No evento",
+    "saude": {
+     "diabetes": false,
+     "hipertensao": false,
+     "cardiaco": false,
+     "coagulacao": false,
+     "anticoagulante": false,
+     "epilepsia": false,
+     "infecciosa": false,
+     "alergia": false,
+     "queloide": false,
+     "pele": false,
+     "gestante": false,
+     "medicamento": false,
+     "alcool": false,
+     "jejum": false,
+     "desmaio": false
+    },
+    "detalhes": "",
+    "termos": {
+     "ciente": true,
+     "verdade": true,
+     "imagem": true,
+     "whatsapp": true
+    },
+    "responsavel": null
+   },
+   "alerts": [],
+   "pay": {
+    "method": "cartao",
+    "amount": 150,
+    "at": 1793472300000
+   },
+   "queueAt": 1793472300000,
+   "table": 2,
+   "artistId": "a3",
+   "calledAt": 1793472900000,
+   "startedAt": 1793473080000,
+   "doneAt": 1793474700000,
+   "care": {
+    "1": 1793538000000,
+    "3": 1793710800000
+   },
+   "source": "qr"
+  }
+ ],
+ "settings": {
+  "id": "settings",
+  "studioName": "A2 Tattoo Studio",
+  "owner": "Ariana",
+  "whatsapp": "",
+  "publicUrl": "",
+  "avgMin": 25,
+  "commission": 50,
+  "prices": {
+   "F": {
+    "P": 150,
+    "M": 200,
+    "G": 260
+   },
+   "D": {
+    "P": null,
+    "M": 280,
+    "G": 360
+   }
+  },
+  "liveEventId": "e_live",
+  "templates": {
+   "1": "Oi, {nome}! Aqui é a Ariana, do A2 Tattoo Studio. Como está a sua tattoo do {evento}? Nos primeiros dias, lave 2 a 3 vezes ao dia com sabonete neutro, seque com papel toalha e passe uma camada fina da pomada indicada. Qualquer dúvida, é só chamar.",
+   "3": "{nome}, passando pra saber da sua tattoo. É normal ela ficar sensível e um pouco avermelhada. Continue lavando e hidratando, sem coçar e sem tirar casquinhas. Evite sol, piscina e mar.",
+   "7": "Oi, {nome}! Uma semana de tattoo. Agora ela pode descascar e coçar um pouco: faz parte da cicatrização. Não arranque as peles, só hidrate. Tudo certo por aí?",
+   "14": "{nome}, sua tattoo está quase cicatrizada. Siga hidratando e, quando ela estiver totalmente fechada, use protetor solar. Manda uma foto pra gente ver como ficou?",
+   "20": "{nome}, 20 dias de tattoo! A cicatrização deve estar completa. Obrigada por tatuar com o A2. Se quiser fazer a próxima no estúdio (fineline, blackwork, realismo, neotrad, cobertura ou reforma), é só responder esta mensagem."
+  }
+ },
+ "public": {
+  "eventId": "e_live",
+  "name": "Festival Sons da Cidade",
+  "type": "Festival/show",
+  "date": "2026-11-07",
+  "venue": "Arena Zona Norte",
+  "start": "12:00",
+  "end": "23:00",
+  "cats": [
+   "Bandas",
+   "Música",
+   "Tema festa",
+   "Minimalistas",
+   "Signos",
+   "Frases",
+   "Palavras",
+   "Místico & cultural"
+  ],
+  "prices": {
+   "F": {
+    "P": 150,
+    "M": 200,
+    "G": 260
+   },
+   "D": {
+    "P": null,
+    "M": 280,
+    "G": 360
+   }
+  },
+  "avgMin": 25,
+  "studio": "A2 Tattoo Studio",
+  "whatsapp": "",
+  "url": "",
+  "tables": [
+   {
+    "n": 1,
+    "artist": "Bruna",
+    "code": "VEN",
+    "status": "em_atendimento",
+    "paused": false
+   },
+   {
+    "n": 2,
+    "artist": "Caio",
+    "code": "WCU",
+    "status": "chamado",
+    "paused": false
+   },
+   {
+    "n": 3,
+    "artist": "Larissa",
+    "code": "HCD",
+    "status": "em_atendimento",
+    "paused": false
+   },
+   {
+    "n": 4,
+    "artist": "Mel",
+    "code": "QQD",
+    "status": "em_atendimento",
+    "paused": false
+   }
+  ],
+  "waiting": [
+   "JDV",
+   "QCW",
+   "EJY",
+   "YWC"
+  ],
+  "called": [
+   {
+    "code": "QQD",
+    "table": 4,
+    "at": 1794075000000
+   },
+   {
+    "code": "HCD",
+    "table": 3,
+    "at": 1794074460000
+   },
+   {
+    "code": "WCU",
+    "table": 2,
+    "at": 1794073920000
+   },
+   {
+    "code": "VEN",
+    "table": 1,
+    "at": 1794073380000
+   }
+  ],
+  "open": true,
+  "updatedAt": 1794081600000
+ }
+}
