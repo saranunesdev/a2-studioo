@@ -15,6 +15,10 @@ export interface Backend {
   // Gestão
   ownerSignedIn(): Promise<boolean>;
   ownerSignIn(email: string): Promise<'sent' | 'ok'>;
+  /** Entrar com e-mail e senha (sem mandar e-mail). Só no modo conectado. */
+  ownerSignInPassword?(email: string, password: string): Promise<void>;
+  /** Criar ou trocar a senha da gestão já logada. Só no modo conectado. */
+  setOwnerPassword?(password: string): Promise<void>;
   signOut(): Promise<void>;
   subscribeAll(cb: (d: AllData | null) => void): Unsub;
   put(col: Col, id: string, data: object): Promise<void>;

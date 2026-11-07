@@ -65,6 +65,14 @@ export function createSupabaseBackend(url: string, key: string): Backend {
       if (error) throw new Error(error.message);
       return 'sent';
     },
+    async ownerSignInPassword(email, password) {
+      const { error } = await sb.auth.signInWithPassword({ email, password });
+      if (error) throw new Error(error.message);
+    },
+    async setOwnerPassword(password) {
+      const { error } = await sb.auth.updateUser({ password });
+      if (error) throw new Error(error.message);
+    },
     async signOut() {
       await sb.auth.signOut();
     },
