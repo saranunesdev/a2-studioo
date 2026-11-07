@@ -1,0 +1,31 @@
+/* Identidade A2 Tattoo Studio — paleta e tipografia da prancha da marca.
+   Paleta: #0A0A0A · #1C1C1C · #333333 · #BFBFBF · #FFFFFF
+   Contraste: #FFFFFF sobre #0A0A0A ≈ 19:1 · #BFBFBF sobre #1C1C1C ≈ 9:1.
+   #333333 sobre #0A0A0A ≈ 1,6:1 → só em bordas decorativas, nunca em texto.
+   Controles (campos, botões vazados) usam borda #BFBFBF para ficarem visíveis (≥ 3:1). */
+:root {
+  --c-black: #0a0a0a;
+  --c-graphite: #1c1c1c;
+  --c-line: #333333;
+  --c-silver: #bfbfbf;
+  --c-white: #ffffff;
+
+  --bg: var(--c-black);
+  --surface: var(--c-graphite);
+  --ink: var(--c-white);
+  --muted: var(--c-silver);
+  --line: var(--c-line);
+  --control: var(--c-silver);
+  --btn: var(--c-white);
+  --on-btn: var(--c-black);
+
+  --serif: 'Playfair Display', Didot, 'Bodoni 72', 'Bodoni MT', Georgia, serif;
+  --sans: Montserrat, Lato, 'Helvetica Neue', Arial, sans-serif;
+
+  --fs: 16px; /* mínimo de leitura */
+  --fs-lg: 18px;
+  --tap: 48px; /* altura de toque (mínimo 44px) */
+  --r: 4px;
+  --gutter: 16px;
+  color-scheme: dark;
+}
