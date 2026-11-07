@@ -12,7 +12,7 @@ App da A2 Tattoo Studio para flash tattoo em eventos. Vite + React + TypeScript;
 
 ## Regras importantes
 - Não abra o bloco de dados de `prototipo/a2-eventos.html` (linha 162, 4 MB de base64).
-- Três acessos: gestão (`/painel`, dona), atendimento (`/atendimento`, PIN, só o evento aberto hoje), cliente (`/cliente`, sem login) e telão (`/fila`).
+- Três acessos: gestão (`/painel`, sem login, por decisão da dona; ver `0002_gestao_sem_login.sql`), atendimento (`/atendimento`, PIN, só o evento aberto hoje), cliente (`/cliente`, sem login) e telão (`/fila`).
 - Nunca expor ao atendimento agenda, orçamento, contratos, equipe ou fechamento; nunca expor ao cliente/telão nomes, telefones ou saúde. Os recortes estão em `src/lib/queue.ts` (`deskData`, `publicDoc`) e em `supabase/migrations/0001_a2.sql`; mantenha os dois iguais e os testes em `queue.test.ts`.
 - Regras da fila: `src/lib/queue.ts` (TS) e `a2_queue`/`a2_fill_tables` (SQL) espelham uma à outra.
 - Identidade: só a paleta `#0A0A0A #1C1C1C #333333 #BFBFBF #FFFFFF`; `#333333` nunca em texto. Playfair Display + Montserrat.

@@ -56,26 +56,6 @@ export function createSupabaseBackend(url: string, key: string): Backend {
 
   return {
     mode: 'supabase',
-    async ownerSignedIn() {
-      const { data } = await sb.auth.getSession();
-      return !!data.session;
-    },
-    async ownerSignIn(email) {
-      const { error } = await sb.auth.signInWithOtp({ email, options: { emailRedirectTo: location.origin + '/painel' } });
-      if (error) throw new Error(error.message);
-      return 'sent';
-    },
-    async ownerSignInPassword(email, password) {
-      const { error } = await sb.auth.signInWithPassword({ email, password });
-      if (error) throw new Error(error.message);
-    },
-    async setOwnerPassword(password) {
-      const { error } = await sb.auth.updateUser({ password });
-      if (error) throw new Error(error.message);
-    },
-    async signOut() {
-      await sb.auth.signOut();
-    },
     subscribeAll(cb) {
       let alive = true;
       let t: ReturnType<typeof setTimeout>;
