@@ -13,7 +13,6 @@ import type { AllData, Artist, EventDoc, Role } from '../../lib/types';
 import {
   addDays, diffDays, digits, fmtD, fmtDLong, fmtPhone, parseBlocked, parseD, pad, today, tsKey, uid, waLink, wdOf,
 } from '../../lib/util';
-import { authErrorText } from '../../lib/authErrors';
 import { useAll, useBackend } from '../../store';
 import { SEED_PIN } from '../../store/seed';
 import { clientUrl } from '../cliente/ClientePage';
@@ -33,23 +32,18 @@ const ITEMS = [
 export default function Gestao() {
   const b = useBackend();
   const nav = useNavigate();
-  const [ok, setOk] = useState<boolean | null>(null);
   const all = useAll();
-  useEffect(() => {
-    b.ownerSignedIn().then(setOk);
-  }, [b]);
-  if (ok === false) return <Navigate to="/" replace />;
-  if (ok === null || all === undefined)
+  if (all === undefined)
     return <main className="page"><div className="hero" style={{ paddingTop: '28vh' }}><Logo size={150} /><p className="muted">Carregando…</p></div></main>;
   if (all === null)
     return (
       <main className="page narrow"><div className="card" style={{ marginTop: 40 }}>
         <p className="big">Não deu para carregar os dados.</p>
-        <p className="muted">Confira a internet. Se o seu e-mail não estiver liberado na gestão, peça para a dona do estúdio incluir.</p>
-        <button className="btn" onClick={() => b.signOut().then(() => nav('/'))}>Sair</button>
+        <p className="muted">Confira a internet e tente de novo.</p>
+        <button className="btn" onClick={() => location.reload()}>Tentar de novo</button>
       </div></main>
     );
-  const exit = () => b.signOut().then(() => nav('/'));
+  const exit = () => nav('/');
   return (
     <Shell items={ITEMS} badge={b.mode === 'local' ? 'Demonstração' : 'Gestão'} onExit={exit}>
       <Routes>
@@ -525,54 +519,12 @@ function Ajustes({ all, exit }: { all: AllData; exit: () => void }) {
               </>
             )}
             <h2 className="h2">Conta</h2>
-            {b.mode === 'supabase' && <PasswordCard />}
-            <button className="btn ghost" style={{ marginTop: 14 }} onClick={exit}>Sair da gestão</button>
+            <button className="btn ghost" onClick={exit}>Sair da gestão</button>
           </section>
         </div>
       </main>
       {qr && <QrModal all={all} onClose={() => setQr(false)} />}
     </>
-  );
-}
-
-/** Senha da gestão: depois dela, o login não depende mais de e-mail. */
-function PasswordCard() {
-  const b = useBackend();
-  const toast = useToast();
-  const [pw, setPw] = useState('');
-  const [pw2, setPw2] = useState('');
-  const [err, setErr] = useState<{ pw?: string; pw2?: string }>({});
-  const [busy, setBusy] = useState(false);
-  const save = async () => {
-    const e: { pw?: string; pw2?: string } = {};
-    if (pw.length < 8) e.pw = 'A senha precisa ter pelo menos 8 caracteres.';
-    else if (pw !== pw2) e.pw2 = 'As duas senhas não são iguais.';
-    setErr(e);
-    if (e.pw || e.pw2) return;
-    setBusy(true);
-    try {
-      await b.setOwnerPassword!(pw);
-      setPw('');
-      setPw2('');
-      toast('Senha salva. Nas próximas vezes, entre com e-mail e senha.');
-    } catch (x) {
-      setErr({ pw: authErrorText(x) });
-    } finally {
-      setBusy(false);
-    }
-  };
-  return (
-    <form className="card" onSubmit={(e) => { e.preventDefault(); save(); }}>
-      <p style={{ marginTop: 0 }}><b>Senha da gestão</b></p>
-      <p className="muted">Com senha, você entra sem esperar e-mail. O link por e-mail tem limite de poucos envios por hora.</p>
-      <Field label="Senha nova" error={err.pw} hint="Pelo menos 8 caracteres.">
-        {(p) => <input className="inp" {...p} type="password" autoComplete="new-password" value={pw} onChange={(e) => setPw(e.target.value)} />}
-      </Field>
-      <Field label="Repita a senha" error={err.pw2}>
-        {(p) => <input className="inp" {...p} type="password" autoComplete="new-password" value={pw2} onChange={(e) => setPw2(e.target.value)} />}
-      </Field>
-      <button className="btn" style={{ marginTop: 14 }} disabled={busy}>Salvar senha</button>
-    </form>
   );
 }
 

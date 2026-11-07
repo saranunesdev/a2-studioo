@@ -5,21 +5,14 @@ export type Col = 'events' | 'artists' | 'tickets';
 
 /**
  * Tudo o que as telas precisam do banco de dados.
- * - Gestão (dona): lê e grava tudo.
+ * - Gestão: sem login; quem abre /painel lê e grava tudo.
  * - Atendimento: entra com PIN e só vê o evento aberto hoje.
  * - Cliente e telão: sem login; só veem a fila pública e o próprio pedido.
  */
 export interface Backend {
   mode: 'local' | 'supabase';
 
-  // Gestão
-  ownerSignedIn(): Promise<boolean>;
-  ownerSignIn(email: string): Promise<'sent' | 'ok'>;
-  /** Entrar com e-mail e senha (sem mandar e-mail). Só no modo conectado. */
-  ownerSignInPassword?(email: string, password: string): Promise<void>;
-  /** Criar ou trocar a senha da gestão já logada. Só no modo conectado. */
-  setOwnerPassword?(password: string): Promise<void>;
-  signOut(): Promise<void>;
+  // Gestão (sem login: quem abre /painel tem acesso a tudo)
   subscribeAll(cb: (d: AllData | null) => void): Unsub;
   put(col: Col, id: string, data: object): Promise<void>;
   patch(col: Col | 'settings', id: string, partial: object): Promise<void>;

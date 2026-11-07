@@ -92,16 +92,6 @@ export function createLocalBackend(): Backend {
 
   return {
     mode: 'local',
-    async ownerSignedIn() {
-      return sessionStorage.getItem('a2-owner') === '1';
-    },
-    async ownerSignIn() {
-      sessionStorage.setItem('a2-owner', '1');
-      return 'ok';
-    },
-    async signOut() {
-      sessionStorage.removeItem('a2-owner');
-    },
     subscribeAll(cb) {
       return watch(() => cb(toAll(clone(raw))));
     },
@@ -167,8 +157,6 @@ export function createLocalBackend(): Backend {
       return withLock(() => {
         if (pin !== undefined && !pinOk(pin)) throw new Error('PIN inválido.');
         if (raw.settings.liveEventId !== input.eventId) throw new Error('Este evento não está aberto.');
-        if (input.payMethod && pin === undefined && sessionStorage.getItem('a2-owner') !== '1')
-          throw new Error('Só a equipe confirma pagamento.');
         const all = toAll(raw);
         const taken = new Set(all.tickets.filter((t) => t.eventId === input.eventId).map((t) => t.code));
         const id = secretId();

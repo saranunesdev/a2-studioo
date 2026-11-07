@@ -8,7 +8,7 @@ Funciona no navegador, no celular e no computador. O cliente **não precisa inst
 
 | Acesso | Quem | Como entra | O que vê |
 |---|---|---|---|
-| **Gestão** | Dona do estúdio | E-mail (link mágico) | Tudo: Agenda, Hoje, Pós, Equipe, Ajustes, eventos com orçamento, contratos e fechamento |
+| **Gestão** | Dona do estúdio | Direto, sem login | Tudo: Agenda, Hoje, Pós, Equipe, Ajustes, eventos com orçamento, contratos e fechamento |
 | **Atendimento** | Balcão no dia do evento | PIN criado em Ajustes | **Só o evento aberto hoje**: fila, pagamentos, fichas, “Novo cliente” (preencher pelo cliente no tablet) e tela da mesa |
 | **Cliente** | Público do evento | QR code, sem login | Catálogo, ficha (português e inglês), código, posição na fila e chamada em tela cheia |
 
@@ -29,19 +29,21 @@ Abra http://localhost:5173. Sem configurar nada, o app roda em **modo demonstra�
 
 1. Crie um projeto em [supabase.com](https://supabase.com).
 2. No SQL Editor, rode `supabase/migrations/0001_a2.sql`.
-3. Gere os dados iniciais com o seu e-mail de dona e rode o arquivo gerado no SQL Editor:
+3. Rode também `supabase/migrations/0002_gestao_sem_login.sql`, que deixa a gestão sem login.
+4. Gere os dados iniciais e rode o arquivo gerado no SQL Editor:
    ```bash
    node scripts/make-seed-sql.mjs seu@email.com
    ```
    O comando mostra o PIN do atendimento. O arquivo `supabase/seed.sql` não vai para o Git.
-4. Em Authentication › URL Configuration, coloque o endereço do app (ex.: `https://a2-eventos.vercel.app`) em Site URL e Redirect URLs.
 5. Copie `.env.example` para `.env` e preencha `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` (Project Settings › API).
 6. Na Vercel, importe o repositório, adicione as mesmas duas variáveis e publique. O `vercel.json` já cuida das rotas.
 7. No app publicado, em Ajustes › Estúdio, preencha o **Link público do app**. É ele que vai no QR code.
 
 ### Regras de acesso no banco
 
-- A gestão (e-mails em `a2_owners`) lê e grava as tabelas.
+> **Atenção:** a gestão está sem login, por decisão da dona do estúdio. Qualquer pessoa com o link do app (ou com a chave pública) pode ler e mudar todas as tabelas, inclusive as fichas de saúde. Para voltar a proteger, desfaça `0002_gestao_sem_login.sql`.
+
+- A gestão lê e grava as tabelas, sem login.
 - O atendimento nunca lê as tabelas: usa só funções que conferem o PIN e devolvem o evento aberto hoje (`a2_desk`, `a2_queue`, `a2_submit_ticket`).
 - O cliente usa `a2_public_live` (fila sem dados pessoais), `a2_submit_ticket` e `a2_get_ticket` (o próprio pedido, por um id secreto guardado no celular). O preço é sempre o dos Ajustes, nunca o que vem do celular.
 - Cada operação da fila trava o evento no banco, então duas mesas liberando ao mesmo tempo nunca chamam o mesmo cliente.
