@@ -8,7 +8,7 @@ Funciona no navegador, no celular e no computador. O cliente **não precisa inst
 
 | Acesso | Quem | Como entra | O que vê |
 |---|---|---|---|
-| **Gestão** | Dona do estúdio | Direto, sem login | Tudo: Agenda, Hoje, Pós, Equipe, Ajustes, eventos com orçamento, contratos e fechamento |
+| **Gestão** | Dona do estúdio | PIN da gestão (uma vez por aparelho) | Tudo: Agenda, Hoje, Pós, Equipe, Ajustes, eventos com orçamento, contratos e fechamento |
 | **Atendimento** | Balcão no dia do evento | PIN criado em Ajustes | **Só o evento aberto hoje**: fila, pagamentos, fichas, “Novo cliente” (preencher pelo cliente no tablet) e tela da mesa |
 | **Cliente** | Público do evento | QR code, sem login | Catálogo, ficha (português e inglês), código, posição na fila e chamada em tela cheia |
 
@@ -21,7 +21,7 @@ npm install
 npm run dev
 ```
 
-Abra http://localhost:5173. Sem configurar nada, o app roda em **modo demonstração**: os dados ficam no navegador, e abas do mesmo aparelho ficam sincronizadas (dá para abrir o cliente numa aba e a gestão em outra). PIN de exemplo do atendimento: `2468` (troque em Ajustes).
+Abra http://localhost:5173. PIN da gestão no modo demonstração: `135790`. Sem configurar nada, o app roda em **modo demonstração**: os dados ficam no navegador, e abas do mesmo aparelho ficam sincronizadas (dá para abrir o cliente numa aba e a gestão em outra). PIN de exemplo do atendimento: `2468` (troque em Ajustes).
 
 > No modo demonstração o QR code **não** conecta outros celulares, porque cada aparelho tem os próprios dados. Para isso, conecte o Supabase.
 
@@ -29,7 +29,7 @@ Abra http://localhost:5173. Sem configurar nada, o app roda em **modo demonstra�
 
 1. Crie um projeto em [supabase.com](https://supabase.com).
 2. No SQL Editor, rode `supabase/migrations/0001_a2.sql`.
-3. Rode também `supabase/migrations/0002_gestao_sem_login.sql`, que deixa a gestão sem login.
+3. Rode também `0002_gestao_sem_login.sql` e `0003_pin_da_gestao.sql`, nessa ordem. Depois crie o PIN da gestão no SQL Editor: `select a2_setup_owner_pin('SEU-PIN');` (de 6 a 8 números; só funciona uma vez, depois troque em Ajustes).
 4. Gere os dados iniciais e rode o arquivo gerado no SQL Editor:
    ```bash
    node scripts/make-seed-sql.mjs seu@email.com
@@ -41,9 +41,7 @@ Abra http://localhost:5173. Sem configurar nada, o app roda em **modo demonstra�
 
 ### Regras de acesso no banco
 
-> **Atenção:** a gestão está sem login, por decisão da dona do estúdio. Qualquer pessoa com o link do app (ou com a chave pública) pode ler e mudar todas as tabelas, inclusive as fichas de saúde. Para voltar a proteger, desfaça `0002_gestao_sem_login.sql`.
-
-- A gestão lê e grava as tabelas, sem login.
+- A gestão entra com um PIN de números, sem e-mail. O PIN fica embaralhado em `a2_secrets`, e o banco confere o PIN em cada leitura e gravação (`a2_owner_all`, `a2_owner_put`, `a2_owner_patch`, `a2_owner_remove`). Cinco PINs errados seguidos travam as tentativas por 5 minutos. Quem tem só o link não vê nada.
 - O atendimento nunca lê as tabelas: usa só funções que conferem o PIN e devolvem o evento aberto hoje (`a2_desk`, `a2_queue`, `a2_submit_ticket`).
 - O cliente usa `a2_public_live` (fila sem dados pessoais), `a2_submit_ticket` e `a2_get_ticket` (o próprio pedido, por um id secreto guardado no celular). O preço é sempre o dos Ajustes, nunca o que vem do celular.
 - Cada operação da fila trava o evento no banco, então duas mesas liberando ao mesmo tempo nunca chamam o mesmo cliente.

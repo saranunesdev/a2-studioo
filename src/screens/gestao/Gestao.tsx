@@ -14,7 +14,8 @@ import {
   addDays, diffDays, digits, fmtD, fmtDLong, fmtPhone, parseBlocked, parseD, pad, today, tsKey, uid, waLink, wdOf,
 } from '../../lib/util';
 import { useAll, useBackend } from '../../store';
-import { SEED_PIN } from '../../store/seed';
+import { getOwnerPin, setOwnerPin } from '../../store/ownerPin';
+import { DEMO_OWNER_PIN, SEED_PIN } from '../../store/seed';
 import { clientUrl } from '../cliente/ClientePage';
 import { LiveBoard, MesaView } from '../live/Live';
 import { ownerSource } from '../live/source';
@@ -32,7 +33,26 @@ const ITEMS = [
 export default function Gestao() {
   const b = useBackend();
   const nav = useNavigate();
-  const all = useAll();
+  const [pin, setPinState] = useState<string | null>(getOwnerPin);
+  const all = useAll(pin);
+  const forget = () => {
+    setOwnerPin(null);
+    setPinState(null);
+  };
+  if (!pin || all === 'denied')
+    return (
+      <OwnerPinGate
+        changed={!!pin && all === 'denied'}
+        onOk={(p) => {
+          setOwnerPin(p);
+          setPinState(p);
+        }}
+        onBack={() => {
+          forget();
+          nav('/');
+        }}
+      />
+    );
   if (all === undefined)
     return <main className="page"><div className="hero" style={{ paddingTop: '28vh' }}><Logo size={150} /><p className="muted">Carregando…</p></div></main>;
   if (all === null)
@@ -43,7 +63,10 @@ export default function Gestao() {
         <button className="btn" onClick={() => location.reload()}>Tentar de novo</button>
       </div></main>
     );
-  const exit = () => nav('/');
+  const exit = () => {
+    forget();
+    nav('/');
+  };
   return (
     <Shell items={ITEMS} badge={b.mode === 'local' ? 'Demonstração' : 'Gestão'} onExit={exit}>
       <Routes>
@@ -57,6 +80,84 @@ export default function Gestao() {
         <Route path="*" element={<Navigate to="/painel" replace />} />
       </Routes>
     </Shell>
+  );
+}
+
+/* ---------- PIN da gestão ---------- */
+function OwnerPinGate({ changed, onOk, onBack }: { changed: boolean; onOk: (pin: string) => void; onBack: () => void }) {
+  const b = useBackend();
+  const [pin, setPin] = useState('');
+  const [err, setErr] = useState(changed ? 'O PIN da gestão mudou. Digite o PIN novo.' : '');
+  const [busy, setBusy] = useState(false);
+  const enter = async () => {
+    if (!/^\d{4,8}$/.test(pin)) return setErr('O PIN tem de 6 a 8 números.');
+    setBusy(true);
+    setErr('');
+    try {
+      const r = await b.ownerLogin(pin);
+      if (r.ok) return onOk(pin);
+      setPin('');
+      setErr(r.wait ? `Muitas tentativas erradas. Espere ${Math.ceil(r.wait / 60)} min e tente de novo.` : 'PIN errado.');
+    } catch {
+      setErr('Não deu para conferir o PIN. Confira a internet e tente de novo.');
+    } finally {
+      setBusy(false);
+    }
+  };
+  return (
+    <main className="entry" id="main">
+      <form className="card" style={{ padding: 24, width: '100%', maxWidth: 440 }} onSubmit={(e) => { e.preventDefault(); enter(); }}>
+        <div className="center" style={{ marginBottom: 20 }}><Logo size={150} /></div>
+        <h1 className="h1">Gestão do estúdio</h1>
+        <Field label="PIN da gestão" error={err} hint={b.mode === 'local' ? `Modo demonstração: o PIN é ${DEMO_OWNER_PIN}.` : 'Você digita uma vez por aparelho.'}>
+          {(p) => <input className="inp" {...p} type="password" inputMode="numeric" autoComplete="current-password" autoFocus maxLength={8} value={pin}
+            onChange={(e) => setPin(e.target.value.replace(/\D/g, ''))} style={{ fontSize: 28, letterSpacing: '.3em' }} />}
+        </Field>
+        <button className="btn block lg" style={{ marginTop: 18 }} disabled={busy}>{busy ? 'Conferindo…' : 'Entrar'}</button>
+        <button type="button" className="link" style={{ marginTop: 12 }} onClick={onBack}>← Voltar</button>
+      </form>
+    </main>
+  );
+}
+
+/** Troca do PIN da gestão. */
+function OwnerPinCard({ attendantPin }: { attendantPin: string }) {
+  const b = useBackend();
+  const toast = useToast();
+  const [d, setD] = useState({ p1: '', p2: '' });
+  const [err, setErr] = useState<{ p1?: string; p2?: string }>({});
+  const [busy, setBusy] = useState(false);
+  const save = async () => {
+    const e: { p1?: string; p2?: string } = {};
+    if (!/^\d{6,8}$/.test(d.p1)) e.p1 = 'O PIN precisa ter de 6 a 8 números.';
+    else if (d.p1 === attendantPin) e.p1 = 'Use um PIN diferente do PIN do atendimento.';
+    else if (d.p1 !== d.p2) e.p2 = 'Os dois PINs não são iguais.';
+    setErr(e);
+    if (e.p1 || e.p2) return;
+    setBusy(true);
+    try {
+      await b.changeOwnerPin(d.p1);
+      setD({ p1: '', p2: '' });
+      toast('PIN da gestão trocado. Os outros aparelhos vão pedir o PIN novo.');
+    } catch {
+      setErr({ p1: 'Não deu para trocar o PIN. Confira a internet e tente de novo.' });
+    } finally {
+      setBusy(false);
+    }
+  };
+  const only = (v: string) => v.replace(/\D/g, '').slice(0, 8);
+  return (
+    <form className="card" onSubmit={(e) => { e.preventDefault(); save(); }}>
+      <p style={{ marginTop: 0 }}><b>PIN da gestão</b></p>
+      <p className="muted">É o PIN que abre esta área. Trocar o PIN desconecta os outros aparelhos que usavam o antigo.</p>
+      <Field label="PIN novo" error={err.p1} hint="De 6 a 8 números.">
+        {(p) => <input className="inp" {...p} type="password" inputMode="numeric" autoComplete="new-password" value={d.p1} onChange={(e) => setD({ ...d, p1: only(e.target.value) })} />}
+      </Field>
+      <Field label="Repita o PIN novo" error={err.p2}>
+        {(p) => <input className="inp" {...p} type="password" inputMode="numeric" autoComplete="new-password" value={d.p2} onChange={(e) => setD({ ...d, p2: only(e.target.value) })} />}
+      </Field>
+      <button className="btn" style={{ marginTop: 14 }} disabled={busy}>Trocar PIN da gestão</button>
+    </form>
   );
 }
 
@@ -519,7 +620,8 @@ function Ajustes({ all, exit }: { all: AllData; exit: () => void }) {
               </>
             )}
             <h2 className="h2">Conta</h2>
-            <button className="btn ghost" onClick={exit}>Sair da gestão</button>
+            <OwnerPinCard attendantPin={s.attendantPin} />
+            <button className="btn ghost" style={{ marginTop: 14 }} onClick={exit}>Sair da gestão</button>
           </section>
         </div>
       </main>

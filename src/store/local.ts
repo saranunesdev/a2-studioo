@@ -5,7 +5,8 @@ import { applyQueueOp, deskData, fillTables, makeTicket, publicDoc } from '../li
 import type { AllData, QueueOp, Ticket, TicketInput } from '../lib/types';
 import { clone, deepMerge, secretId } from '../lib/util';
 import type { Backend, Col, Unsub } from './backend';
-import { defaultSettings, seedData } from './seed';
+import { getOwnerPin, setOwnerPin } from './ownerPin';
+import { DEMO_OWNER_PIN, defaultSettings, seedData } from './seed';
 
 const KEY = 'a2-studio-v1';
 
@@ -89,11 +90,23 @@ export function createLocalBackend(): Backend {
     return fn();
   };
   const pinOk = (pin?: string) => !!pin && pin === raw.settings.attendantPin;
+  const ownerPinOf = () => raw.settings.ownerPin || DEMO_OWNER_PIN;
 
   return {
     mode: 'local',
+    async ownerLogin(pin) {
+      read();
+      return { ok: pin === ownerPinOf() };
+    },
+    async changeOwnerPin(newPin) {
+      read();
+      if (getOwnerPin() !== ownerPinOf()) throw new Error('Sem acesso.');
+      raw.settings.ownerPin = newPin;
+      setOwnerPin(newPin);
+      write();
+    },
     subscribeAll(cb) {
-      return watch(() => cb(toAll(clone(raw))));
+      return watch(() => cb(getOwnerPin() === ownerPinOf() ? toAll(clone(raw)) : 'denied'));
     },
     async put(col: Col, id, data) {
       read();

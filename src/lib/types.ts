@@ -147,6 +147,8 @@ export interface Settings {
   prices: Prices;
   liveEventId: string | null;
   templates: Record<string, string>;
+  /** PIN da gestão — só no modo demonstração. No Supabase ele fica embaralhado no banco. */
+  ownerPin?: string;
   /** PIN do acesso de atendimento (só o dia do evento). */
   attendantPin: string;
 }
