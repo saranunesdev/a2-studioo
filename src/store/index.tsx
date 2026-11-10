@@ -19,11 +19,15 @@ export function BackendProvider({ children }: { children: ReactNode }) {
 }
 export const useBackend = () => useContext(Ctx)!;
 
-/** undefined = carregando. */
-export function useAll() {
+/** undefined = carregando; 'denied' = PIN da gestão errado ou trocado. key força recarregar depois do PIN. */
+export function useAll(key: string | null = null) {
   const b = useBackend();
-  const [d, set] = useState<AllData | null | undefined>(undefined);
-  useEffect(() => b.subscribeAll(set), [b]);
+  const [d, set] = useState<AllData | null | undefined | 'denied'>(undefined);
+  useEffect(() => {
+    if (!key) return;
+    set(undefined);
+    return b.subscribeAll(set);
+  }, [b, key]);
   return d;
 }
 export function useDesk(pin: string | null) {

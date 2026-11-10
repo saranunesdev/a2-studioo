@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Field, Logo } from '../components/ui';
 import { setPin, useBackend } from '../store';
 
-/** Tela inicial: escolhe o acesso. Gestão e cliente entram direto, sem login. */
+/** Tela inicial: escolhe o acesso. Gestão e atendimento pedem PIN; cliente entra direto. */
 export default function Entrada() {
   const b = useBackend();
   const nav = useNavigate();
@@ -40,7 +40,7 @@ export default function Entrada() {
             <div className="stack">
               <h1 className="h1">Entrar</h1>
               <Link className="btn block lg" to="/painel">Gestão do estúdio</Link>
-              <p className="muted" style={{ marginTop: 6 }}>Agenda, eventos, equipe, orçamento, fechamento e ajustes.</p>
+              <p className="muted" style={{ marginTop: 6 }}>Agenda, eventos, equipe, orçamento, fechamento e ajustes. Entra com o PIN da gestão.</p>
               <button className="btn ghost block lg" onClick={() => setMode('atendimento')}>Atendimento do dia</button>
               <p className="muted" style={{ marginTop: 6 }}>Só o evento de hoje: fila, pagamentos, fichas e mesas. Entra com PIN.</p>
               <hr style={{ border: 0, borderTop: '1px solid var(--line)', margin: '20px 0' }} />

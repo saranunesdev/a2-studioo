@@ -4,6 +4,8 @@ import type { AllData, Settings } from '../lib/types';
 import { addDays, clone, diffDays, today } from '../lib/util';
 
 export const SEED_PIN = '2468';
+/** PIN da gestão no modo demonstração (no Supabase o PIN fica embaralhado no banco). */
+export const DEMO_OWNER_PIN = '135790';
 
 export function defaultSettings(): Settings {
   return {
